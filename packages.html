@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Our Packages â€“ Gopuram Tours & Travels | Premium Pilgrimage Experiences</title>
+    <meta name="description"
+        content="Explore our curated Tirupati and South India pilgrimage packages. Unlimited local plans, Tirumala Darshan, Kanipakam, Srikalahasti, and more. Best prices and premium service." />
+    <link rel="icon" type="image/jpeg" href="logo.jpeg">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#570000",
+                        "inverse-primary": "#ffb4a8",
+                        "primary-container": "#800000",
+                        "secondary": "#735c00",
+                        "on-surface-variant": "#5a413d",
+                        "secondary-container": "#fed65b",
+                        "inverse-on-surface": "#f5f3c7",
+                        "on-secondary-container": "#745c00",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#f28f29",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#2e1500",
+                        "surface-dim": "#dedcb1",
+                        "surface": "#fefccf",
+                        "surface-tint": "#b22b1d",
+                        "on-primary-fixed": "#410000",
+                        "primary-fixed-dim": "#ffb4a8",
+                        "surface-container-highest": "#e6e5b9",
+                        "on-secondary": "#ffffff",
+                        "background": "#fefccf",
+                        "on-primary-fixed-variant": "#8f0f07",
+                        "secondary-fixed-dim": "#e9c349",
+                        "inverse-surface": "#323214",
+                        "on-primary-container": "#ff8371",
+                        "on-surface": "#1d1d03",
+                        "surface-container-high": "#eceabe",
+                        "on-background": "#1d1d03",
+                        "surface-bright": "#fefccf",
+                        "surface-container": "#f2f0c4",
+                        "tertiary": "#3e1f00",
+                        "on-tertiary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#ffdad4",
+                        "tertiary-container": "#5e3100",
+                        "tertiary-fixed": "#ffdcc2",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#574500",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#6d3a00",
+                        "on-secondary-fixed": "#241a00",
+                        "surface-variant": "#e6e5b9",
+                        "outline": "#8e706c",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#ffe088",
+                        "outline-variant": "#e2bfb9",
+                        "surface-container-low": "#f8f6c9",
+                        "tertiary-fixed-dim": "#ffb77a"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .font-noto-serif { font-family: 'Noto Serif', serif; }
+        .font-manrope { font-family: 'Manrope', sans-serif; }
+
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Call Pulse Animation */
+        @keyframes pulse-call {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(87, 0, 0, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 15px rgba(87, 0, 0, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(87, 0, 0, 0); }
+        }
+
+        .call-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #570000;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            animation: pulse-call 2s infinite;
+        }
+
+        .call-float:hover { transform: scale(1.1); background-color: #800000; }
+
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 100px;
+            right: 30px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-float:hover { transform: scale(1.1); background-color: #128c7e; }
+
+        @media (max-width: 768px) {
+            .call-float { bottom: 100px; right: 20px; width: 50px; height: 50px; }
+            .whatsapp-float { bottom: 160px; right: 20px; width: 50px; height: 50px; }
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-on-surface font-body">
+    <!-- TopNavBar -->
+    <nav class="sticky top-0 z-50 bg-[#fefccf]/90 backdrop-blur-md shadow-sm border-b border-[#e2bfb9]/10">
+        <div class="flex justify-between items-center w-full px-8 py-4 max-w-6xl mx-auto">
+            <div class="flex items-center">
+                <a href="index.html">
+                    <img src="logo.jpeg" alt="Gopuram Tours"
+                        class="h-14 w-auto object-contain rounded-lg shadow-md border border-primary/10">
+                </a>
+            </div>
+            <div class="hidden md:flex items-center space-x-5">
+                <a class="text-[#5a413d] dark:text-[#e2bfb9] text-sm font-medium hover:text-[#800000] dark:hover:text-[#ffffff] transition-colors duration-300 font-noto-serif tracking-tight"
+                    href="index.html">Home</a>
+                <a class="text-[#5a413d] dark:text-[#e2bfb9] text-sm font-medium hover:text-[#800000] dark:hover:text-[#ffffff] transition-colors duration-300 font-noto-serif tracking-tight"
+                    href="about-us.html">About Us</a>
+                <div class="relative group">
+                    <button
+                        class="flex items-center space-x-1 text-[#570000] dark:text-[#fed65b] border-b-2 border-[#735c00] pb-1 text-sm font-bold font-noto-serif tracking-tight">
+                        <span>Packages</span>
+                        <span class="material-symbols-outlined text-sm">expand_more</span>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 hidden group-hover:block bg-[#fefccf] backdrop-blur-md shadow-xl border border-[#e2bfb9]/20 rounded-xl py-2 min-w-[220px] z-[60] animate-in fade-in slide-in-from-top-1 duration-200">
+                        <a href="local-package.html"
+                            class="block px-6 py-2 text-sm text-[#5a413d] hover:bg-primary/5 hover:text-primary transition-colors font-noto-serif">Unlimited
+                            Package</a>
+                        <a href="tirumala-package.html"
+                            class="block px-6 py-2 text-sm text-[#5a413d] hover:bg-primary/5 hover:text-primary transition-colors font-noto-serif">Tirumala
+                            Packages</a>
+                        <a href="tirupati-package.html"
+                            class="block px-6 py-2 text-sm text-[#5a413d] hover:bg-primary/5 hover:text-primary transition-colors font-noto-serif">Tirupati
+                            Packages</a>
+                        <a href="kanipakam-package.html"
+                            class="block px-6 py-2 text-sm text-[#5a413d] hover:bg-primary/5 hover:text-primary transition-colors font-noto-serif">Kanipakam
+                            Packages</a>
+                        <a href="kalahasti-package.html"
+                            class="block px-6 py-2 text-sm text-[#5a413d] hover:bg-primary/5 hover:text-primary transition-colors font-noto-serif">Kalahasti
+                            Packages</a>
+                        <a href="kanchi-package.html"
+                            class="block px-6 py-2 text-sm text-[#5a413d] hover:bg-primary/5 hover:text-primary transition-colors font-noto-serif">Kanchi
+                            Packages</a>
+                        <a href="goldentemple-package.html"
+                            class="block px-6 py-2 text-sm text-[#5a413d] hover:bg-primary/5 hover:text-primary transition-colors font-noto-serif">Golden
+                            Temple Packages</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <button
+                        class="flex items-center space-x-1 text-[#5a413d] dark:text-[#e2bfb9] text-sm font-medium hover:text-[#800000] dark:hover:text-[#ffffff] transition-colors duration-300 font-noto-serif tracking-tight">
+                        <span>Out Station Tours</span>
+                        <span class="material-symbols-outlined text-sm">expand_more</span>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 hidden group-hover:block bg-[#fefccf] backdrop-blur-md shadow-xl border border-[#e2bfb9]/20 rounded-xl py-2 min-w-[220px] z-[60] animate-in fade-in slide-in-from-top-1 duration-200">
+                        <a href="temple-tours.html"
+                            class="block px-6 py-2 text-sm text-[#5a413d] hover:bg-primary/5 hover:text-primary transition-colors font-noto-serif">Temple Tours</a>
+                        <a href="heritage-tours.html"
+                            class="block px-6 py-2 text-sm text-[#5a413d] hover:bg-primary/5 hover:text-primary transition-colors font-noto-serif">Heritage Tours</a>
+                        <a href="hill-station-tours.html"
+                            class="block px-6 py-2 text-sm text-[#5a413d] hover:bg-primary/5 hover:text-primary transition-colors font-noto-serif">Hill Station Tours</a>
+                        <a href="adventure-tours.html"
+                            class="block px-6 py-2 text-sm text-[#5a413d] hover:bg-primary/5 hover:text-primary transition-colors font-noto-serif">Adventure Tours</a>
+                        <a href="beach-backwater.html"
+                            class="block px-6 py-2 text-sm text-[#5a413d] hover:bg-primary/5 hover:text-primary transition-colors font-noto-serif">Beach - Backwater</a>
+                        <a href="group-tours.html"
+                            class="block px-6 py-2 text-sm text-[#5a413d] hover:bg-primary/5 hover:text-primary transition-colors font-noto-serif">Group Tours</a>
+                    </div>
+                </div>
+                <a class="text-[#5a413d] dark:text-[#e2bfb9] text-sm font-medium hover:text-[#800000] dark:hover:text-[#ffffff] transition-colors duration-300 font-noto-serif tracking-tight"
+                    href="homestay.html">Accommodation</a>
+                <a class="text-[#5a413d] dark:text-[#e2bfb9] text-sm font-medium hover:text-[#800000] dark:hover:text-[#ffffff] transition-colors duration-300 font-noto-serif tracking-tight"
+                    href="blog.html">Blog</a>
+                <a class="text-[#5a413d] dark:text-[#e2bfb9] text-sm font-medium hover:text-[#800000] dark:hover:text-[#ffffff] transition-colors duration-300 font-noto-serif tracking-tight"
+                    href="destinations.html">Destinations</a>
+                <a class="text-[#5a413d] dark:text-[#e2bfb9] text-sm font-medium hover:text-[#800000] dark:hover:text-[#ffffff] transition-colors duration-300 font-noto-serif tracking-tight"
+                    href="contact.html">Contact</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <button onclick="toggleDarkMode()" class="text-primary hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined" id="theme-icon-main">dark_mode</span>
+                </button>
+                <button onclick="toggleBookingModal()"
+                    class="hidden md:block px-6 py-2 bg-primary text-on-primary font-bold text-sm rounded-lg hover:scale-95 duration-200 ease-in-out">Book
+                    Now</button>
+                <button onclick="toggleMobileMenu()" class="md:hidden text-primary hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobileMenu" class="fixed inset-0 z-[100] hidden bg-[#fefccf] dark:bg-[#1d1d03] overflow-hidden">
+        <div class="flex flex-col h-full p-8">
+            <div class="flex justify-between items-center mb-10">
+                <img src="logo.jpeg" alt="Logo" class="h-12 w-auto rounded-lg shadow-md">
+                <button onclick="toggleMobileMenu()" class="text-primary hover:rotate-90 transition-transform duration-300">
+                    <span class="material-symbols-outlined text-4xl">close</span>
+                </button>
+            </div>
+            <div class="flex flex-col space-y-8 overflow-y-auto pb-24">
+                <a href="index.html" class="text-3xl font-headline text-on-surface italic pl-4">Home</a>
+                <a href="about-us.html" class="text-3xl font-headline text-on-surface italic pl-4">About Us</a>
+                <div class="space-y-4 pl-4">
+                    <p class="text-[10px] uppercase tracking-[0.4em] text-primary font-black">Pilgrimage Packages</p>
+                    <div class="grid grid-cols-1 gap-4 pl-2 border-l border-primary/10">
+                        <a href="local-package.html" class="text-lg text-on-surface-variant font-medium">Local Sightseeing</a>
+                        <a href="tirumala-package.html" class="text-lg text-on-surface-variant font-medium">Tirumala Darshan</a>
+                        <a href="packages.html" class="text-lg text-on-surface-variant font-medium font-bold text-primary">View All Packages &#x2192;</a>
+                    </div>
+                </div>
+                <div class="space-y-4 pl-4">
+                    <p class="text-[10px] uppercase tracking-[0.4em] text-primary font-black">Out Station Tours</p>
+                    <div class="grid grid-cols-1 gap-4 pl-2 border-l border-primary/10">
+                        <a href="temple-tours.html" class="text-lg text-on-surface-variant font-medium">Spiritual Temple Tours</a>
+                        <a href="hill-station-tours.html" class="text-lg text-on-surface-variant font-medium">Hill Station Retreats</a>
+                        <a href="destinations.html" class="text-lg text-on-surface-variant font-medium font-bold text-primary">Explore Destinations &#x2192;</a>
+                    </div>
+                </div>
+                <a href="homestay.html" class="text-3xl font-headline text-on-surface italic pl-4">Accommodation</a>
+                <a href="blog.html" class="text-3xl font-headline text-on-surface italic pl-4">Travel Blog</a>
+                <a href="contact.html" class="text-3xl font-headline text-on-surface italic pl-4">Contact Seva</a>
+            </div>
+            <div class="mt-auto pt-8 border-t border-primary/10 flex items-center justify-between">
+                <button onclick="toggleDarkMode()" class="flex items-center space-x-3 text-primary font-bold group">
+                    <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                        <span class="material-symbols-outlined" id="theme-icon-mobile">dark_mode</span>
+                    </div>
+                    <span id="theme-text-mobile" class="text-sm uppercase tracking-widest">Dark Mode</span>
+                </button>
+                <a href="https://wa.me/918919031909" class="w-10 h-10 rounded-full bg-[#25D366]/10 flex items-center justify-center text-[#25D366]">
+                    <span class="material-symbols-outlined">chat</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleMobileMenu(){var m=document.getElementById('mobileMenu');m.classList.toggle('hidden');document.body.style.overflow=m.classList.contains('hidden')?'auto':'hidden';}
+        function toggleDarkMode(){var h=document.documentElement,d=h.classList.toggle('dark');h.classList.toggle('light');var n=d?'light_mode':'dark_mode';var ids=['theme-icon-main','theme-icon-mobile'];for(var i=0;i<ids.length;i++){var e=document.getElementById(ids[i]);if(e)e.innerText=n;}var t=document.getElementById('theme-text-mobile');if(t)t.innerText=d?'Light Mode':'Dark Mode';localStorage.setItem('theme',d?'dark':'light');}
+        if(localStorage.getItem('theme')==='dark'){document.documentElement.classList.add('dark');document.documentElement.classList.remove('light');setTimeout(function(){var ids=['theme-icon-main','theme-icon-mobile'];for(var i=0;i<ids.length;i++){var e=document.getElementById(ids[i]);if(e)e.innerText='light_mode';}var t=document.getElementById('theme-text-mobile');if(t)t.innerText='Light Mode';},100);}
+    </script>
+
+    <!-- Header Section -->
+    <section class="py-20 bg-primary relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary via-primary-container to-secondary opacity-40"></div>
+        <div class="max-w-6xl mx-auto px-8 relative z-10 text-center">
+            <h1 class="font-headline text-5xl md:text-7xl text-white mb-6 italic">Our Premium Packages</h1>
+            <p class="text-white/80 text-xl max-w-2xl mx-auto font-noto-serif italic">
+                Choose the perfect spiritual journey tailored for your family.
+            </p>
+        </div>
+    </section>
+
+    <!-- Packages List -->
+    <div class="max-w-6xl mx-auto px-8 py-24 space-y-32">
+        <!-- 1. Unlimited Package -->
+        <section id="unlimited" class="scroll-mt-32">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="w-full lg:w-1/2">
+                    <div class="bg-[#fed65b]/20 inline-block px-4 py-1 rounded-full mb-6">
+                        <span class="text-secondary font-bold text-xs uppercase tracking-widest italic">Best Flexibility</span>
+                    </div>
+                    <h2 class="font-headline text-4xl text-primary mb-8 italic">Unlimited Rental Package</h2>
+                    <p class="text-on-surface-variant text-lg leading-relaxed mb-10 italic">
+                        Experience Tirupati and Tirumala exactly how you like. Our unlimited package allows you to choose your destinations and explore at your own pace with a dedicated premium vehicle and driver.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                        <div class="p-6 bg-white rounded-3xl border border-primary/10 shadow-lg hover:border-secondary transition-colors">
+                            <h4 class="font-bold text-primary mb-4 flex items-center gap-2">
+                                <span class="material-symbols-outlined text-secondary">minor_crash</span> Sedan
+                            </h4>
+                            <p class="text-3xl font-headline text-secondary mb-2 italic">â‚¹2,000<span class="text-sm font-manrope text-gray-400"> /day</span></p>
+                            <p class="text-[10px] text-gray-500 uppercase tracking-widest">Etios / Dzire / Liva (4 Seats)</p>
+                        </div>
+                        <div class="p-6 bg-white rounded-3xl border border-primary/10 shadow-lg hover:border-secondary transition-colors">
+                            <h4 class="font-bold text-primary mb-4 flex items-center gap-2">
+                                <span class="material-symbols-outlined text-secondary">airport_shuttle</span> SUV / MUV
+                            </h4>
+                            <p class="text-3xl font-headline text-secondary mb-2 italic">â‚¹3,000<span class="text-sm font-manrope text-gray-400"> /day</span></p>
+                            <p class="text-[10px] text-gray-500 uppercase tracking-widest">Innova / Ertiga (6-7 Seats)</p>
+                        </div>
+                        <div class="p-6 bg-white rounded-3xl border border-primary/10 shadow-lg hover:border-secondary transition-colors">
+                            <h4 class="font-bold text-primary mb-4 flex items-center gap-2">
+                                <span class="material-symbols-outlined text-secondary">group</span> Tempo
+                            </h4>
+                            <p class="text-3xl font-headline text-secondary mb-2 italic">â‚¹4,000<span class="text-sm font-manrope text-gray-400"> /day</span></p>
+                            <p class="text-[10px] text-gray-500 uppercase tracking-widest">Tempo Traveller (12-14 Seats)</p>
+                        </div>
+                    </div>
+                    <div class="bg-primary/5 p-8 rounded-3xl mb-10">
+                        <h4 class="font-bold text-primary mb-4 flex items-center gap-2 uppercase tracking-widest text-xs italic">Important Information</h4>
+                        <ul class="space-y-3 text-sm text-on-surface-variant italic">
+                            <li class="flex gap-2"><span class="material-symbols-outlined text-xs text-primary">info</span> Includes: Rent of the vehicle and Driver Batta.</li>
+                            <li class="flex gap-2"><span class="material-symbols-outlined text-xs text-primary">info</span> Timings: 4:00 AM - 11:00 PM.</li>
+                            <li class="flex gap-2"><span class="material-symbols-outlined text-xs text-primary">info</span> Excludes: Toll, Parking, and Driver Food (â‚¹500).</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <button onclick="contactWhatsApp('Unlimited Package')" class="px-12 py-4 bg-primary text-white font-black rounded-2xl shadow-xl hover:scale-95 transition-all">Book This Plan</button>
+                        <a href="local-package.html" class="px-12 py-4 border-2 border-primary text-primary font-black rounded-2xl shadow-lg hover:bg-primary hover:text-white transition-all text-center">View Full Details</a>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 relative">
+                    <div class="aspect-square bg-primary/5 rounded-[4rem] overflow-hidden rotate-3 hover:rotate-0 transition-transform duration-500">
+                        <img src="innova.avif" class="w-full h-full object-cover brightness-[0.9]" alt="Unlimited Package Taxi" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Tirumala Packages -->
+        <section id="tirumala" class="scroll-mt-32">
+            <div class="flex flex-col lg:flex-row-reverse gap-16 items-center">
+                <div class="w-full lg:w-1/2">
+                    <div class="bg-[#ff7c1b]/20 inline-block px-4 py-1 rounded-full mb-6">
+                        <span class="text-[#ff7c1b] font-bold text-xs uppercase tracking-widest italic">Divine Choice</span>
+                    </div>
+                    <h2 class="font-headline text-4xl text-primary mb-8 italic">Tirumala Darshan Packages</h2>
+                    <p class="text-on-surface-variant text-lg leading-relaxed mb-10 italic">
+                        The ultimate one-day pilgrimage to Tirumala. We coordinate everything from pickup to drop, ensuring a smooth VIP Darshan experience.
+                    </p>
+                    <ul class="space-y-4 mb-12">
+                        <li class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-primary mt-1">temple_hindu</span>
+                            <div>
+                                <p class="font-bold text-gray-900">One-Day Tirumala Package</p>
+                                <p class="text-sm text-gray-500 italic">Complete trip covering Tirumala Main Temple and local hilltop wonders.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-primary mt-1">verified_user</span>
+                            <div>
+                                <p class="font-bold text-gray-900">Professional Assistance</p>
+                                <p class="text-sm text-gray-500 italic">Guidance for Darshan tickets and queue management.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="border-t border-primary/10 pt-8 mb-12">
+                        <div class="flex justify-between items-center bg-white p-6 rounded-2xl shadow-sm border border-primary/5">
+                            <div>
+                                <p class="text-xs text-gray-400 uppercase tracking-widest">Starting From</p>
+                                <p class="text-3xl font-headline text-primary italic">â‚¹1,500 <span class="text-xs font-manrope text-gray-400"> (Tirupati Pickup)</span></p>
+                            </div>
+                            <button onclick="contactWhatsApp('Tirumala Package')" class="bg-primary text-white p-4 rounded-xl shadow-lg hover:scale-105 transition-transform">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <button onclick="contactWhatsApp('Tirumala Packages')" class="px-12 py-4 bg-primary text-white font-black rounded-2xl shadow-xl hover:scale-95 transition-all">Book This Plan</button>
+                        <a href="tirumala-package.html" class="px-12 py-4 border-2 border-primary text-primary font-black rounded-2xl shadow-lg hover:bg-primary hover:text-white transition-all text-center">View Full Details</a>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <div class="aspect-video bg-primary/5 rounded-[4rem] overflow-hidden -rotate-3 hover:rotate-0 transition-transform duration-500 shadow-2xl">
+                        <img src="andhra_pradesh.png" class="w-full h-full object-cover" alt="Tirumala Temple" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Tirupati Packages -->
+        <section id="tirupati" class="scroll-mt-32">
+            <div class="bg-surface-container p-12 md:p-20 rounded-[4rem] shadow-inner relative overflow-hidden border border-primary/5">
+                <div class="max-w-3xl mx-auto text-center relative z-10">
+                    <h2 class="font-headline text-4xl text-primary mb-8 italic">Tirupati Local Sightseeing</h2>
+                    <p class="text-on-surface-variant text-lg mb-12 italic leading-relaxed">
+                        Explore the ancient and powerful temples located in the downhill of Tirupati. A spiritual journey through history and devotion.
+                    </p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+                        <div class="text-center p-6 bg-white rounded-3xl shadow-sm hover:shadow-md transition-shadow border border-primary/5">
+                            <img src="https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=200&auto=format&fit=crop" class="w-full h-24 object-cover rounded-xl mb-3" alt="Padmavathi Temple" />
+                            <p class="text-[10px] font-black text-primary uppercase tracking-tighter">Padmavathi Temple</p>
+                        </div>
+                        <div class="text-center p-6 bg-white rounded-3xl shadow-sm hover:shadow-md transition-shadow border border-primary/5">
+                            <img src="https://images.unsplash.com/photo-1624571409412-1f253e1ecc89?q=80&w=200&auto=format&fit=crop" class="w-full h-24 object-cover rounded-xl mb-3" alt="Govindaraja Temple" />
+                            <p class="text-[10px] font-black text-primary uppercase tracking-tighter">Govindaraja Swamy</p>
+                        </div>
+                        <div class="text-center p-6 bg-white rounded-3xl shadow-sm hover:shadow-md transition-shadow border border-primary/5">
+                            <img src="https://images.unsplash.com/photo-1608958435020-e8a7109ba809?q=80&w=200&auto=format&fit=crop" class="w-full h-24 object-cover rounded-xl mb-3" alt="Kapila Theertham" />
+                            <p class="text-[10px] font-black text-primary uppercase tracking-tighter">Kapila Theertham</p>
+                        </div>
+                        <div class="text-center p-6 bg-white rounded-3xl shadow-sm hover:shadow-md transition-shadow border border-primary/5">
+                            <img src="https://images.unsplash.com/photo-1590050752117-23a9d7fc217c?q=80&w=200&auto=format&fit=crop" class="w-full h-24 object-cover rounded-xl mb-3" alt="ISKCON Temple" />
+                            <p class="text-[10px] font-black text-primary uppercase tracking-tighter">ISKCON Tirupati</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-center gap-4">
+                        <button onclick="contactWhatsApp('Tirupati Local Packages')" class="px-12 py-4 bg-secondary text-white font-black rounded-2xl shadow-xl hover:scale-95 transition-all italic">Book Tirupati Tour</button>
+                        <a href="tirupati-package.html" class="px-12 py-4 border-2 border-secondary text-secondary font-black rounded-2xl shadow-lg hover:bg-secondary hover:text-white transition-all text-center italic">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4-7. Other Regional Packages -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <section id="kanipakam" class="bg-white p-12 rounded-[3rem] border border-primary/5 hover:border-primary/20 transition-all group flex flex-col h-full">
+                <span class="material-symbols-outlined text-4xl text-secondary mb-6 group-hover:scale-110 transition-transform">temple_hindu</span>
+                <h3 class="font-headline text-3xl text-primary mb-4 italic">Kanipakam Packages</h3>
+                <p class="text-gray-600 mb-8 italic flex-grow">
+                    Visit the self-manifested **Swayambhu Varasidhi Vinayaka Swamy**. Witness the idol that is said to be growing in size and seek blessings at the sacred Bahuda River.
+                </p>
+                <div class="space-y-2 mb-8 text-sm text-gray-500 italic">
+                    <p class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">local_activity</span> 75km from Tirupati</p>
+                    <p class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">history_edu</span> Famous for "Pramanam" (Truth Vows)</p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 mt-auto">
+                    <button onclick="contactWhatsApp('Kanipakam Package')" class="font-bold text-primary flex items-center gap-2 hover:gap-4 transition-all">Enquire Now <span class="material-symbols-outlined">arrow_forward</span></button>
+                    <a href="kanipakam-package.html" class="font-bold text-secondary flex items-center gap-2 hover:gap-4 transition-all">View Details <span class="material-symbols-outlined">info</span></a>
+                </div>
+            </section>
+
+            <section id="kalahasti" class="bg-white p-12 rounded-[3rem] border border-primary/5 hover:border-primary/20 transition-all group flex flex-col h-full">
+                <span class="material-symbols-outlined text-4xl text-secondary mb-6 group-hover:scale-110 transition-transform">air</span>
+                <h3 class="font-headline text-3xl text-primary mb-4 italic">Kalahasti Packages</h3>
+                <p class="text-gray-600 mb-8 italic flex-grow">
+                    Experience the powerful **Rahu-Ketu Dosha Nivarana Puja** at the Vayu Lingam (Element of Air). One of the most sacred Pancha Bhoota Stalam temples.
+                </p>
+                <div class="space-y-2 mb-8 text-sm text-gray-500 italic">
+                    <p class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">local_activity</span> 38km from Tirupati</p>
+                    <p class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">history_edu</span> Dakshina Kashi</p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 mt-auto">
+                    <button onclick="contactWhatsApp('Kalahasti Package')" class="font-bold text-primary flex items-center gap-2 hover:gap-4 transition-all">Enquire Now <span class="material-symbols-outlined">arrow_forward</span></button>
+                    <a href="kalahasti-package.html" class="font-bold text-secondary flex items-center gap-2 hover:gap-4 transition-all">View Details <span class="material-symbols-outlined">info</span></a>
+                </div>
+            </section>
+
+            <section id="kanchi" class="bg-white p-12 rounded-[3rem] border border-primary/5 hover:border-primary/20 transition-all group flex flex-col h-full">
+                <span class="material-symbols-outlined text-4xl text-secondary mb-6 group-hover:scale-110 transition-transform">architecture</span>
+                <h3 class="font-headline text-3xl text-primary mb-4 italic">Kanchipuram Packages</h3>
+                <p class="text-gray-600 mb-8 italic flex-grow">
+                    Discover the "City of Temples". Visit **Kamakshi Amman**, **Ekambareswarar**, and the stunning **Varadharaja Perumal** temple. Perfect for spiritual and silk shopping tours.
+                </p>
+                <div class="space-y-2 mb-8 text-sm text-gray-500 italic">
+                    <p class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">local_activity</span> 105km from Tirupati</p>
+                    <p class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">history_edu</span> One of the 7 Mokshapuris</p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 mt-auto">
+                    <button onclick="contactWhatsApp('Kanchipuram Package')" class="font-bold text-primary flex items-center gap-2 hover:gap-4 transition-all">Enquire Now <span class="material-symbols-outlined">arrow_forward</span></button>
+                    <a href="kanchi-package.html" class="font-bold text-secondary flex items-center gap-2 hover:gap-4 transition-all">View Details <span class="material-symbols-outlined">info</span></a>
+                </div>
+            </section>
+
+            <section id="goldentemple" class="bg-white p-12 rounded-[3rem] border border-primary/5 hover:border-primary/20 transition-all group flex flex-col h-full">
+                <span class="material-symbols-outlined text-4xl text-secondary mb-6 group-hover:scale-110 transition-transform">currency_exchange</span>
+                <h3 class="font-headline text-3xl text-primary mb-4 italic">Golden Temple Packages</h3>
+                <p class="text-gray-600 mb-8 italic flex-grow">
+                    Marvel at the **Sripuram Golden Temple** in Vellore. Crafted with 1500kg of pure gold, set in a massive star-shaped path representing spiritual evolution.
+                </p>
+                <div class="space-y-2 mb-8 text-sm text-gray-500 italic">
+                    <p class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">local_activity</span> 100km from Tirupati</p>
+                    <p class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">history_edu</span> Spiritual Oasis</p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 mt-auto">
+                    <button onclick="contactWhatsApp('Golden Temple Vellore Package')" class="font-bold text-primary flex items-center gap-2 hover:gap-4 transition-all">Enquire Now <span class="material-symbols-outlined">arrow_forward</span></button>
+                    <a href="goldentemple-package.html" class="font-bold text-secondary flex items-center gap-2 hover:gap-4 transition-all">View Details <span class="material-symbols-outlined">info</span></a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Final CTA -->
+    <section class="py-24 px-8 max-w-4xl mx-auto text-center">
+        <div class="bg-primary p-12 md:p-20 rounded-[3rem] relative overflow-hidden shadow-2xl">
+            <div class="relative z-10">
+                <h2 class="font-headline text-4xl text-white mb-6 italic">Need a Custom Plan?</h2>
+                <p class="text-white/80 text-lg mb-12 max-w-xl mx-auto italic">Talk to our travel experts for a personalized pilgrimage itinerary.</p>
+                <a href="https://wa.me/918919031909" class="px-12 py-4 bg-white text-primary font-black rounded-2xl shadow-xl hover:scale-105 transition-transform flex items-center justify-center gap-2 italic">
+                    <span class="material-symbols-outlined">chat</span> WhatsApp Us Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Synchronized) -->
+    <footer class="bg-primary dark:bg-[#1a0000] text-white full-width pt-16 pb-8 italic">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 max-w-screen-2xl mx-auto text-left">
+            <div>
+                <img src="logo.jpeg" alt="Gopuram Tours"
+                    class="h-16 w-auto object-contain rounded-lg mb-6 shadow-2xl border border-white/10">
+                <p class="text-outline-variant opacity-80 text-sm leading-relaxed">Trusted by pilgrims for comfortable and
+                    peaceful Tirupati tours since 2010.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 text-sm uppercase tracking-widest text-secondary-container">Quick Links</h4>
+                <ul class="space-y-3 text-sm tracking-wide">
+                    <li><a class="text-outline-variant opacity-80 hover:opacity-100 hover:text-secondary-container transition-opacity"
+                            href="about-us.html">About Us</a></li>
+                    <li><a class="text-outline-variant opacity-80 hover:opacity-100 hover:text-secondary-container transition-opacity"
+                            href="local-package.html">Unlimited Package</a></li>
+                    <li><a class="text-outline-variant opacity-80 hover:opacity-100 hover:text-secondary-container transition-opacity"
+                            href="tirumala-package.html">Tirumala Packages</a></li>
+                    <li><a class="text-outline-variant opacity-80 hover:opacity-100 hover:text-secondary-container transition-opacity"
+                            href="tirupati-package.html">Tirupati Packages</a></li>
+                    <li><a class="text-outline-variant opacity-80 hover:opacity-100 hover:text-secondary-container transition-opacity"
+                            href="kanipakam-package.html">Kanipakam Packages</a></li>
+                    <li><a class="text-outline-variant opacity-80 hover:opacity-100 hover:text-secondary-container transition-opacity"
+                            href="kalahasti-package.html">Kalahasti Packages</a></li>
+                    <li><a class="text-outline-variant opacity-80 hover:opacity-100 hover:text-secondary-container transition-opacity"
+                            href="kanchi-package.html">Kanchi Packages</a></li>
+                    <li><a class="text-outline-variant opacity-80 hover:opacity-100 hover:text-secondary-container transition-opacity"
+                            href="goldentemple-package.html">Golden Temple Packages</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 text-sm uppercase tracking-widest text-secondary-container">Legal</h4>
+                <ul class="space-y-3 text-sm tracking-wide">
+                    <li><a class="text-outline-variant opacity-80 hover:opacity-100 hover:text-secondary-container transition-opacity"
+                            href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a class="text-outline-variant opacity-80 hover:opacity-100 hover:text-secondary-container transition-opacity"
+                            href="terms-of-service.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 text-sm uppercase tracking-widest text-secondary-container">Contact Us</h4>
+                <p class="text-outline-variant opacity-80 text-sm mb-4 tracking-wide font-manrope">beside LV
+                    Kalyanamandapam,<br />Korramenugunta, Tirupati,<br />Andhra Pradesh 517503</p>
+                <div class="space-y-2">
+                    <p class="text-outline-variant opacity-80 text-sm font-manrope">Phone: <a href="tel:8919031909"
+                            class="text-white hover:text-secondary-container">8919031909</a></p>
+                    <p class="text-outline-variant opacity-80 text-sm font-manrope">Email: <a
+                            href="mailto:gopuramtourz@gmail.com"
+                            class="text-white hover:text-secondary-container break-all">gopuramtourz@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+        <div
+            class="mt-16 pt-8 border-t border-white/10 text-center text-outline-variant opacity-50 text-xs font-manrope tracking-widest">
+            Â© 2026 Gopuram Tours â€“ Travels &amp; Hospitality, Tirupati. All Rights Reserved. Designed by <a
+                href="http://www.theupliv.com" target="_blank" class="hover:text-white transition-colors">UPliv</a>.
+        </div>
+    </footer>
+
+    <!-- BottomNavBar (Mobile Only) -->
+    <nav
+        class="md:hidden bg-[#fefccf]/80 dark:bg-[#1d1d03]/80 backdrop-blur-xl fixed bottom-0 w-full z-50 rounded-t-3xl border-t border-[#e2bfb9]/20 shadow-[0_-4px_20px_rgba(29,29,3,0.06)]">
+        <div class="flex justify-around items-center h-20 px-2 pb-safe">
+            <a class="flex flex-col items-center justify-center text-[#5a413d] dark:text-[#e2bfb9] font-manrope text-[9px] font-bold uppercase hover:scale-110 transition-transform"
+                href="index.html">
+                <span class="material-symbols-outlined mb-1">home</span>
+                <span>Home</span>
+            </a>
+            <a class="flex flex-col items-center justify-center text-[#570000] dark:text-[#fed65b] font-manrope text-[9px] font-bold uppercase hover:scale-110 transition-transform"
+                href="packages.html">
+                <span class="material-symbols-outlined mb-1">inventory_2</span>
+                <span>Packages</span>
+            </a>
+            <a class="flex flex-col items-center justify-center text-[#5a413d] dark:text-[#e2bfb9] font-manrope text-[9px] font-bold uppercase hover:scale-110 transition-transform"
+                href="destinations.html">
+                <span class="material-symbols-outlined mb-1">explore</span>
+                <span>Tours</span>
+            </a>
+            <a class="flex flex-col items-center justify-center text-[#5a413d] dark:text-[#e2bfb9] font-manrope text-[9px] font-bold uppercase hover:scale-110 transition-transform"
+                href="homestay.html">
+                <span class="material-symbols-outlined mb-1">home_work</span>
+                <span>Stay</span>
+            </a>
+            <a class="flex flex-col items-center justify-center text-[#5a413d] dark:text-[#e2bfb9] font-manrope text-[9px] font-bold uppercase hover:scale-110 transition-transform"
+                href="blog.html">
+                <span class="material-symbols-outlined mb-1">article</span>
+                <span>Blog</span>
+            </a>
+            <a class="flex flex-col items-center justify-center text-[#5a413d] dark:text-[#e2bfb9] font-manrope text-[9px] font-bold uppercase hover:scale-110 transition-transform"
+                href="contact.html">
+                <span class="material-symbols-outlined mb-1">contact_support</span>
+                <span>Contact</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Floating Buttons -->
+    <a href="tel:8919031909" class="call-float" title="Call Us">
+        <span class="material-symbols-outlined">call</span>
+    </a>
+
+    <a href="https://wa.me/918919031909" class="whatsapp-float" target="_blank" title="WhatsApp Us">
+        <svg viewBox="0 0 448 512" width="28" height="28" fill="currentColor">
+            <path
+                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.7 17.8 69.4 27.2 106.2 27.2 122.4 0 222-99.6 222-222 0-59.3-23.1-115.1-65.1-157.1zM223.9 446.6c-33.1 0-65.6-8.9-93.9-25.7l-6.7-4-69.8 18.3 18.7-68.1-4.4-7c-18.4-29.4-28.1-63.3-28.1-98.2 0-101.7 82.8-184.5 184.5-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 54 81.2 54 130.4 0 101.7-82.8 184.5-184.5 184.5zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.6-2.8-23.5-8.6-44.8-27.7-16.6-14.8-27.7-33-30.9-38.6-3.2-5.6-.3-8.6 2.5-11.4 2.5-2.5 5.6-6.5 8.3-9.7 2.8-3.2 3.7-5.6 5.6-9.3 1.9-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.2 5.8 23.5 9.2 31.6 11.8 13.3 4.2 25.4 3.6 35 2.2 10.7-1.5 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.3-5-3.7-10.5-6.5z" />
+        </svg>
+    </a>
+
+    <script>
+        function contactWhatsApp(packageName) {
+            const phoneNumber = '918919031909';
+            const message = encodeURIComponent(`Hi Gopuram Tours! I'm interested in the "${packageName}" package. Please provide more details.`);
+            window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+        }
+
+        // Modal Logic
+        function toggleBookingModal() {
+            const modal = document.getElementById('bookingModal');
+            if (modal) {
+                modal.classList.toggle('hidden');
+                if (!modal.classList.contains('hidden')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = 'auto';
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
